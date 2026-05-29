@@ -12,6 +12,24 @@ from scheduler.engine import (
 from scheduler.scoring import (
     calculate_score
 )
+
+st.markdown(
+    """
+    <style>
+
+    .main {
+        background-color: #0E1117;
+    }
+
+    h1, h2, h3 {
+        color: #FAFAFA;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.set_page_config(
     page_title="Bus Charging Scheduler",
     layout="wide"
@@ -55,20 +73,20 @@ average_wait = (
 
 col1, col2, col3 = st.columns(3)
 
-col1.metric(
-    "Total Buses",
-    total_buses
-)
+with col1:
+    st.success(
+        f"Total Buses: {total_buses}"
+    )
 
-col2.metric(
-    "Total Wait Time",
-    f"{total_wait} mins"
-)
+with col2:
+    st.info(
+        f"Total Wait Time: {total_wait} mins"
+    )
 
-col3.metric(
-    "Average Wait",
-    f"{average_wait:.2f} mins"
-)
+with col3:
+    st.warning(
+        f"Average Wait: {average_wait:.2f} mins"
+    )
 
 scenario_score = calculate_score(
     total_wait,
@@ -146,7 +164,51 @@ st.dataframe(
     use_container_width=True
 )
 
+st.subheader("Wait Time Analysis")
+
+chart_data = operator_df.set_index(
+    "Operator"
+)
+
+st.bar_chart(
+    chart_data["Total Wait"]
+)
+
 st.subheader("Station Queues")
+
+timeline_data = []
+
+for station in stations:
+
+    for entry in station.queue:
+
+        timeline_data.append({
+
+            "Station":
+                station.name,
+
+            "Bus":
+                entry["Bus ID"],
+
+            "Start":
+                entry["Charging Start"],
+
+            "End":
+                entry["Charging End"]
+        })
+
+timeline_df = pd.DataFrame(
+    timeline_data
+)
+
+st.subheader(
+    "Charging Timeline"
+)
+
+st.dataframe(
+    timeline_df,
+    use_container_width=True
+)
 
 for station in stations:
 
