@@ -175,3 +175,18 @@ The project can be deployed using Streamlit Community Cloud.
 # 👨‍💻 Author
 
 Dhananjay Chougule
+
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Queue Management
+![Queues](screenshots/queues.png)
+
+### Headline
+![Headline](screenshots/headline.png)
+
+### Matrix
+![Matrix](screenshots/matrix.png)
