@@ -40,19 +40,19 @@ def run_scheduler(scenario):
 
         current_time = departure_minutes
 
-        if "Bangalore" in bus.direction:
+        if bus.direction == "Bangalore-Kochi":
 
-            charging_stations = [
-                stations[1],
-                stations[3]
-            ]
+           charging_stations = [
+               stations[1],
+               stations[3]
+        ]
 
         else:
 
             charging_stations = [
                 stations[2],
                 stations[0]
-            ]
+        ]
 
         previous_distance = 0
 
