@@ -184,18 +184,18 @@ for station in stations:
 
         timeline_data.append({
 
-            "Station":
-                station.name,
+    "Station":
+        station.name,
 
-            "Bus":
-                entry["Bus ID"],
+    "Bus":
+        entry["bus_id"],
 
-            "Start":
-                entry["Charging Start"],
+    "Start":
+        entry["start"],
 
-            "End":
-                entry["Charging End"]
-        })
+    "End":
+        entry["end"]
+})
 
 timeline_df = pd.DataFrame(
     timeline_data
