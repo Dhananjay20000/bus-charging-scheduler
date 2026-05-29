@@ -1,0 +1,108 @@
+
+{
+  "name": "Scenario 5",
+
+  "weights": {
+    "individual": 3,
+    "operator": 3,
+    "overall": 4
+  },
+
+  "route": {
+    "stations": [
+      {
+        "name": "A",
+        "distance": 100
+      },
+      {
+        "name": "B",
+        "distance": 220
+      },
+      {
+        "name": "C",
+        "distance": 320
+      },
+      {
+        "name": "D",
+        "distance": 440
+      }
+    ]
+  },
+
+  "buses": [
+    {
+      "id": "bus-BK-31",
+      "operator": "KPN",
+      "direction": "Bangalore-Kochi",
+      "departure": "17:45"
+    },
+    {
+      "id": "bus-BK-32",
+      "operator": "Orange",
+      "direction": "Bangalore-Kochi",
+      "departure": "17:50"
+    },
+    {
+      "id": "bus-BK-33",
+      "operator": "VRL",
+      "direction": "Bangalore-Kochi",
+      "departure": "17:55"
+    },
+    {
+      "id": "bus-BK-34",
+      "operator": "SRS",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:00"
+    },
+    {
+      "id": "bus-BK-35",
+      "operator": "Kallada",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:05"
+    },
+    {
+      "id": "bus-BK-36",
+      "operator": "GreenLine",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:10"
+    },
+
+    {
+      "id": "bus-KB-31",
+      "operator": "KPN",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:15"
+    },
+    {
+      "id": "bus-KB-32",
+      "operator": "Orange",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:20"
+    },
+    {
+      "id": "bus-KB-33",
+      "operator": "VRL",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:25"
+    },
+    {
+      "id": "bus-KB-34",
+      "operator": "SRS",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:30"
+    },
+    {
+      "id": "bus-KB-35",
+      "operator": "Kallada",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:35"
+    },
+    {
+      "id": "bus-KB-36",
+      "operator": "GreenLine",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:40"
+    }
+  ]
+}
+

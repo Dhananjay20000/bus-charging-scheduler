@@ -1,0 +1,95 @@
+
+{
+  "name": "Scenario 4",
+
+  "weights": {
+    "individual": 2,
+    "operator": 2,
+    "overall": 3
+  },
+
+  "route": {
+    "stations": [
+      {
+        "name": "A",
+        "distance": 100
+      },
+      {
+        "name": "B",
+        "distance": 220
+      },
+      {
+        "name": "C",
+        "distance": 320
+      },
+      {
+        "name": "D",
+        "distance": 440
+      }
+    ]
+  },
+
+  "buses": [
+    {
+      "id": "bus-BK-21",
+      "operator": "KPN",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:00"
+    },
+    {
+      "id": "bus-BK-22",
+      "operator": "KPN",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:10"
+    },
+    {
+      "id": "bus-BK-23",
+      "operator": "Orange",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:20"
+    },
+    {
+      "id": "bus-BK-24",
+      "operator": "VRL",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:30"
+    },
+    {
+      "id": "bus-BK-25",
+      "operator": "SRS",
+      "direction": "Bangalore-Kochi",
+      "departure": "18:40"
+    },
+    {
+      "id": "bus-KB-21",
+      "operator": "KPN",
+      "direction": "Kochi-Bangalore",
+      "departure": "18:50"
+    },
+    {
+      "id": "bus-KB-22",
+      "operator": "Orange",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:00"
+    },
+    {
+      "id": "bus-KB-23",
+      "operator": "VRL",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:10"
+    },
+    {
+      "id": "bus-KB-24",
+      "operator": "SRS",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:20"
+    },
+    {
+      "id": "bus-KB-25",
+      "operator": "Kallada",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:30"
+    }
+  ]
+}
+
