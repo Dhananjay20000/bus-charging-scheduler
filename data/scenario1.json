@@ -41,6 +41,18 @@
       "operator": "Orange",
       "direction": "Bangalore-Kochi",
       "departure": "19:15"
-    }
+    },
+{
+  "id": "bus-KB-01",
+  "operator": "KPN",
+  "direction": "Kochi-Bangalore",
+  "departure": "19:10"
+},
+{
+  "id": "bus-KB-02",
+  "operator": "VRL",
+  "direction": "Kochi-Bangalore",
+  "departure": "19:25"
+}
   ]
 }
