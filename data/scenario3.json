@@ -1,6 +1,5 @@
-
 {
-  "name": "Scenario 2",
+  "name": "Scenario 3",
 
   "weights": {
     "individual": 1,
@@ -49,6 +48,19 @@
       "departure": "19:10"
     },
     {
+      "id": "bus-BK-04",
+      "operator": "KPN",
+      "direction": "Bangalore-Kochi",
+      "departure": "19:20"
+    },
+    {
+      "id": "bus-BK-05",
+      "operator": "Orange",
+      "direction": "Bangalore-Kochi",
+      "departure": "19:30"
+    },
+
+    {
       "id": "bus-KB-01",
       "operator": "KPN",
       "direction": "Kochi-Bangalore",
@@ -65,7 +77,18 @@
       "operator": "Orange",
       "direction": "Kochi-Bangalore",
       "departure": "19:35"
+    },
+    {
+      "id": "bus-KB-04",
+      "operator": "VRL",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:45"
+    },
+    {
+      "id": "bus-KB-05",
+      "operator": "KPN",
+      "direction": "Kochi-Bangalore",
+      "departure": "19:55"
     }
   ]
 }
-
