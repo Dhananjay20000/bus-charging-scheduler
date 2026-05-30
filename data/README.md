@@ -143,6 +143,33 @@ The scheduler performs the following:
 
 ---
 
+# 🎛️ Configuring Scenario Weights
+
+Each scenario contains configurable weights:
+
+```json
+"weights": {
+  "individual": 1,
+  "operator": 1,
+  "overall": 1
+}
+
+
+---
+
+### How to Add a New Scenario
+Also useful to add:
+
+```md
+# ➕ Adding New Scenarios
+
+Create a new JSON file inside the `data/` folder.
+
+Example:
+
+```text
+data/scenario6.json
+
 # 🔮 Future Improvements
 
 * Smarter optimization algorithms
